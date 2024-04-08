@@ -12,6 +12,7 @@ public class Covid19Data {
         this.region = region;
         this.aldersgruppe = aldersgruppe;
         this.iAlt = iAlt;
+        this.dødsfald = dødsfald;
         this.indlagteIntensiv = indlagteIntensiv;
         this.indlagte = indlagte;
         this.dato = dato;
@@ -19,8 +20,7 @@ public class Covid19Data {
 
     @Override
     public String toString() {
-        return "COVID19 DATA" +
-                "\nRegion: " + region +
+        return "Region: " + region +
                 "\nAldersgruppe: " + aldersgruppe +
                 "\nBekræftede tilfælde i alt: " + iAlt +
                 "\nDødsfald: " + dødsfald +
@@ -29,5 +29,33 @@ public class Covid19Data {
                 "\nDato: " + dato
                 + "\n"
                 ;
+    }
+
+    public String getRegion() {
+        return region;
+    }
+
+    public String getAldersgruppe() {
+        return aldersgruppe;
+    }
+
+    public int getiAlt() {
+        return iAlt;
+    }
+
+    public int getDødsfald() {
+        return dødsfald;
+    }
+
+    public int getIndlagteIntensiv() {
+        return indlagteIntensiv;
+    }
+
+    public int getIndlagte() {
+        return indlagte;
+    }
+
+    public String getDato() {
+        return dato;
     }
 }
