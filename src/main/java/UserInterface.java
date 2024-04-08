@@ -23,7 +23,10 @@ public class UserInterface {
             System.out.println("Det indtastede genkendes ikke.");
         }
 
-        System.out.println(covid19Data);
+        for (Covid19Data data : covid19Data) {
+            System.out.println(data.toString());
+        }
+
     }
 
 }
